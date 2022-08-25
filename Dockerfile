@@ -4,8 +4,7 @@ COPY requirements.txt /tmp/pip-tmp/
 # OpenCV Fix error ref: https://itsmycode.com/importerror-libgl-so-1-cannot-open-shared-object-file-no-such-file-or-directory/
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC
-RUN apt-get -y install tzdata
+RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
 RUN apt-get install -y python3-opencv
 RUN pip install opencv-python
 
