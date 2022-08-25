@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:22.07-py3
+FROM python:3.10.5-bullseye
 
 COPY requirements.txt /tmp/pip-tmp/
 # OpenCV Fix error ref: https://itsmycode.com/importerror-libgl-so-1-cannot-open-shared-object-file-no-such-file-or-directory/
