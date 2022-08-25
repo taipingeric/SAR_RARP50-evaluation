@@ -30,7 +30,7 @@ CMD ["python", "AIA-Noobs/inference.py", \
 "--act_config", "ckpt_cfg/20220824-0538.yaml", \
 "--act_ckpt", "ckpt_cfg/20220824-0538.pth", \
 "--data_dir", "../../data/val", \
-"--output_dir", "../data/pred", \
+"--output_dir", "../../data/pred", \
 "--gt_dir", "../../data/gt", \
 "--pred_act", \
 "--eval"]
