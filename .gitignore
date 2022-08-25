@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 ckpt_cfg
+.idea
