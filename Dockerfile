@@ -4,7 +4,10 @@ COPY requirements.txt /tmp/pip-tmp/
 # OpenCV Fix error ref: https://itsmycode.com/importerror-libgl-so-1-cannot-open-shared-object-file-no-such-file-or-directory/
 
 RUN apt-get update
+
+# ref: https://serverfault.com/a/992421
 RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
+
 RUN apt-get install -y python3-opencv
 RUN pip install opencv-python
 
@@ -26,9 +29,9 @@ CMD ["python", "AIA-Noobs/inference.py", \
 "--seg_ckpt", "ckpt_cfg/20220819-0124-best.pth", \
 "--act_config", "ckpt_cfg/20220824-0538.yaml", \
 "--act_ckpt", "ckpt_cfg/20220824-0538.pth", \
-"--data_dir", "../data/val", \
+"--data_dir", "../../data/val", \
 "--output_dir", "../data/pred", \
-"--gt_dir", "../data/gt", \
+"--gt_dir", "../../data/gt", \
 "--pred_act", \
 "--eval", \
 "--pred_seg"]
