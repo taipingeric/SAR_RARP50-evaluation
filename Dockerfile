@@ -32,10 +32,10 @@ CMD ["python", "AIA-Noobs/inference.py", \
 "--data_dir", "../../data/val", \
 "--output_dir", "../../data/pred", \
 "--gt_dir", "../../data/gt", \
-#"--pred_act", \
+"--pred_act", \
 "--tta", \
-"--eval", \
-"--pred_seg"]
+"--eval"]
+#"--pred_seg"]
 #"--sample_video"
 #]
 
