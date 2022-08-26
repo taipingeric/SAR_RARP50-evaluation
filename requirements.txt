@@ -16,3 +16,4 @@ segmentation-models-pytorch
 pytorch-ignite
 wandb
 git+https://github.com/lessw2020/Ranger21.git
+ttach
