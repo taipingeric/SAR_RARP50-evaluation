@@ -25,8 +25,8 @@ COPY . .
 # ENTRYPOINT [ "python", "-m", "scripts.sarrarp50"]
 # ENTRYPOINT ["ls"]
 CMD ["python", "AIA-Noobs/inference.py", \
-"--seg_config", "ckpt_cfg/20220819-0124.yaml", \
-"--seg_ckpt", "ckpt_cfg/20220819-0124-best.pth", \
+"--seg_config", "ckpt_cfg/20220820-1844.yaml", \
+"--seg_ckpt", "ckpt_cfg/20220820-1844-best.pth", \
 "--act_config", "ckpt_cfg/20220824-0538.yaml", \
 "--act_ckpt", "ckpt_cfg/20220824-0538.pth", \
 "--data_dir", "../../data/val", \
