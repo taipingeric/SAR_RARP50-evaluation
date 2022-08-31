@@ -29,15 +29,14 @@ CMD ["python", "AIA-Noobs/inference.py", \
 "--seg_ckpt", "ckpt_cfg/20220820-1844-best.pth", \
 "--act_config", "ckpt_cfg/20220824-0538.yaml", \
 "--act_ckpt", "ckpt_cfg/20220824-0538.pth", \
-"--data_dir", "../../data/val", \
+"--data_dir", "../../data/test", \
 "--output_dir", "../../data/pred", \
-"--gt_dir", "../../data/gt", \
+#"--gt_dir", "../../data/gt", \
+"--sample_video", \
+"--pred_seg", \
 "--pred_act", \
-"--tta", \
-"--eval"]
-#"--pred_seg"]
-#"--sample_video"
-#]
+"--tta"]
+#"--eval"]
 
 #CMD ["python", "AIA-Noobs/inference.py", \
 #"--seg_config", "ckpt_cfg/20220819-0124.yaml", \
